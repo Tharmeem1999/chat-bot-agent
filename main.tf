@@ -6,3 +6,10 @@ module "bedrock_agent" {
   foundation_model = "${var.chatbot_foundation_model}"
   instruction = "${var.chatbot_instruction}"
 }
+
+# --- DynamoDB ---
+module "dynamodb" {
+  source = "./modules/dynamodb"
+
+  table_name = "${var.chatbot_name}-conversations"
+}
