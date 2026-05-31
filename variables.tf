@@ -4,7 +4,7 @@ variable "chatbot_name" {
 }
 
 variable "chatbot_foundation_model" {
-  default = "anthropic.claude-opus-4-1-20250805-v1:0"
+  default = "us.anthropic.claude-opus-4-5-20251101-v1:0"
   type = string
 }
 

@@ -31,7 +31,10 @@ data "aws_iam_policy_document" "agent_permissions" {
   statement {
     actions = ["bedrock:InvokeModel"]
     resources = [
-      "arn:${data.aws_partition.current.partition}:bedrock:${data.aws_region.current.region}::foundation-model/${var.foundation_model}",
+      "arn:${data.aws_partition.current.partition}:bedrock:${data.aws_region.current.region}::foundation-model/*",
+      "arn:${data.aws_partition.current.partition}:bedrock:*::foundation-model/*",
+      "arn:${data.aws_partition.current.partition}:bedrock:${data.aws_region.current.region}:${data.aws_caller_identity.current.account_id}:inference-profile/*",
+      "arn:${data.aws_partition.current.partition}:bedrock:*:${data.aws_caller_identity.current.account_id}:inference-profile/*",
     ]
   }
 }
