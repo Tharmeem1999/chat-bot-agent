@@ -13,3 +13,10 @@ module "dynamodb" {
 
   table_name = "${var.chatbot_name}-conversations"
 }
+
+# --- S3 Bucket ---
+module "s3_bucket" {
+  source = "./modules/s3_bucket"
+
+  bucket_name = "${var.chatbot_name}-files"
+}
