@@ -1,0 +1,9 @@
+﻿Product ID,Product Name,Category,Brand,Availability,Stock Quantity,Price,Features,Description
+P001,Wireless Headphones,Electronics,Sony,In Stock,25,79.99,"Noise cancellation, Bluetooth 5.0, 20-hour battery",High-quality wireless headphones with immersive sound.
+P002,Smart Watch,Wearables,Samsung,In Stock,15,149.99,"Heart-rate monitor, GPS, Sleep tracking, Water resistant",Smartwatch designed for health and fitness tracking.
+P003,Bluetooth Speaker,Electronics,JBL,In Stock,30,49.99,"Waterproof, Portable, 10-hour battery",Compact Bluetooth speaker with powerful sound.
+P004,Gaming Laptop,Computers,ASUS,Out of Stock,0,1199.99,"RTX graphics, 16GB RAM, 512GB SSD",High-performance laptop for gaming and multitasking.
+P005,Smartphone,Mobile Phones,Apple,In Stock,10,899.99,"Advanced camera, USB-C, Face ID",Premium smartphone with advanced features.
+P006,Mechanical Keyboard,Accessories,Logitech,In Stock,18,89.99,"RGB lighting, Mechanical switches, Wireless",Comfortable keyboard for gaming and productivity.
+P007,Wireless Mouse,Accessories,Logitech,In Stock,40,29.99,"Ergonomic design, Rechargeable battery",Lightweight wireless mouse with smooth tracking.
+P008,4K Monitor,Displays,LG,Limited Stock,5,299.99,"27-inch display, HDR support, Ultra HD",High-resolution monitor suitable for work and entertainment.
