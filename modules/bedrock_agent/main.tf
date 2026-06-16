@@ -37,6 +37,11 @@ data "aws_iam_policy_document" "agent_permissions" {
       "arn:${data.aws_partition.current.partition}:bedrock:*:${data.aws_caller_identity.current.account_id}:inference-profile/*",
     ]
   }
+
+  statement {
+    actions   = ["bedrock:Retrieve", "bedrock:RetrieveAndGenerate"]
+    resources = ["arn:${data.aws_partition.current.partition}:bedrock:${data.aws_region.current.region}:${data.aws_caller_identity.current.account_id}:knowledge-base/*"]
+  }
 }
 
 resource "aws_iam_role" "agent_role" {
