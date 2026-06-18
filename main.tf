@@ -7,13 +7,6 @@ module "bedrock_agent" {
   instruction = file("${path.module}/instructions.txt")
 }
 
-# --- DynamoDB ---
-module "dynamodb" {
-  source = "./modules/dynamodb"
-
-  table_name = "${var.chatbot_name}-conversations"
-}
-
 # --- S3 Bucket ---
 module "s3_bucket" {
   source = "./modules/s3_bucket"
