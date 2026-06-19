@@ -38,7 +38,7 @@ This project deploys an AI shop-assistant chatbot from scratch using Terraform. 
 ## Project Structure
 
 ```text
-chat-bot-agent/
+Retail_AI_Assistant/
 ├── main.tf                          # Root module: wires every submodule together
 ├── provider.tf                      # AWS provider + required providers declaration
 ├── variables.tf                     # Root input variables (names, model IDs)
@@ -121,8 +121,8 @@ The region is hard-coded to **`us-east-1`** in [`provider.tf`](provider.tf) — 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Tharmeem1999/chat-bot-agent.git
-   cd chat-bot-agent
+   git clone https://github.com/Tharmeem1999/Retail_AI_Assistant.git
+   cd Retail_AI_Assistant
    ```
 
 2. **Initialize Terraform**
